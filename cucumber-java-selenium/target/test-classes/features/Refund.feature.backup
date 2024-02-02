@@ -1,0 +1,17 @@
+Feature: Refund
+
+  Scenario Outline: Refund Platium
+    Given I login with "AUTUser@flightmgmt.com" and "Ziofa2023!"
+    When I create a new refund request
+    And I select PNR "UP4231"
+    Then The loyalty is "Platinum"
+    When i provide refunder email "tim.straatsma@pega.com"
+    Then the case is sent for approval
+
+  Scenario Outline: Refund Silver
+    Given I login with "AUTUser@flightmgmt.com" and "Ziofa2023!"
+    When I create a new refund request
+    And I select PNR "HJ1330"
+    Then The loyalty is "Silver"
+    When i provide refunder email "tim.straatsma@pega.com"
+    Then the case is sent for approval
