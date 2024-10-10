@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Test set: Playwright.Playwright.BookingCancellationTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 24.49 s <<< FAILURE! -- in Playwright.Playwright.BookingCancellationTest
+Playwright.Playwright.BookingCancellationTest.testApp -- Time elapsed: 24.49 s <<< ERROR!
+com.microsoft.playwright.PlaywrightException: 
+Error {
+  message='url: expected string, got undefined
+  name='Error
+  stack='Error: url: expected string, got undefined
+    at tString (C:\Users\bertr\AppData\Local\Temp\playwright-java-17583502879891334023\package\lib\protocol\validatorPrimitives.js:58:9)
+    at C:\Users\bertr\AppData\Local\Temp\playwright-java-17583502879891334023\package\lib\protocol\validatorPrimitives.js:107:21
+    at DispatcherConnection.dispatch (C:\Users\bertr\AppData\Local\Temp\playwright-java-17583502879891334023\package\lib\server\dispatchers\dispatcher.js:281:21)
+    at transport.onmessage (C:\Users\bertr\AppData\Local\Temp\playwright-java-17583502879891334023\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\bertr\AppData\Local\Temp\playwright-java-17583502879891334023\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
+	at com.microsoft.playwright.impl.PageImpl.lambda$navigate$46(PageImpl.java:932)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:932)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
+	at com.microsoft.playwright.Page.navigate(Page.java:5446)
+	at Playwright.Playwright.BookingCancellationTest.testApp(BookingCancellationTest.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.maven.surefire.junit.JUnitTestSetExecutor.execute(JUnitTestSetExecutor.java:81)
+	at org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:131)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:93)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='url: expected string, got undefined
+  name='Error
+  stack='Error: url: expected string, got undefined
+    at tString (C:\Users\bertr\AppData\Local\Temp\playwright-java-17583502879891334023\package\lib\protocol\validatorPrimitives.js:58:9)
+    at C:\Users\bertr\AppData\Local\Temp\playwright-java-17583502879891334023\package\lib\protocol\validatorPrimitives.js:107:21
+    at DispatcherConnection.dispatch (C:\Users\bertr\AppData\Local\Temp\playwright-java-17583502879891334023\package\lib\server\dispatchers\dispatcher.js:281:21)
+    at transport.onmessage (C:\Users\bertr\AppData\Local\Temp\playwright-java-17583502879891334023\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Users\bertr\AppData\Local\Temp\playwright-java-17583502879891334023\package\lib\protocol\transport.js:77:34)
+    at process.processImmediate (node:internal/timers:483:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 29 more
+
