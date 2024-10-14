@@ -33,7 +33,7 @@ public class DriverFactory {
                 break;
             case "chrome":
                 browserType = Playwright.create().chromium();
-                browser = browserType.launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(headless).setSlowMo(slowMo));
+                browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(headless).setSlowMo(slowMo));
                 break;
             case "webkit":
                 browserType = Playwright.create().webkit();
